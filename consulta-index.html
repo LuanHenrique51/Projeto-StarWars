@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Star Wars</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="./img/r2d2_icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+    <body class="consulta-body" onload="carregaLista()">
+        <style> @font-face{
+            font-family: uni;
+            src: url(Uni.otf);
+            } </style>
+         <style> @font-face{
+          font-family: bebas;
+          src: url(Bebas.otf);
+          } </style>
+            <div id="area-cabeçalho-1">
+              
+              <div class="logo">
+                <a href="home-index.html">
+                  <img src="img/logo-removebg-preview.png" >
+                </a>
+              </div>
+            </div>
+      <div class="container">
+        <!-- libras -->
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- fim libras -->
+        <div class="senha">
+        <form id="loginForm">
+            <h2 class="titulo">Bem-vindo!</h2>
+            <label for="password">Digite a senha:</label><br>
+            <input class="field-3" type="password" id="password" required>
+            <button class="btn btn-primary" type="submit">Entrar</button>
+        </form>
+        <div id="content" style="display: none;">
+          <div class="container-menu">
+            <div class="hamburger">
+            <div class="overlay"><i class="bi bi-x-lg"></i></div>
+            <i class="bi bi-list"></i>
+            </div>
+               <aside class="sidebar">
+                   <nav>
+                       <ul class="menu">
+                           <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                          <!-- <li class="menu-item"><a href="validação.html" class="menu-link">Sujestões</a></li> -->
+                           <div class="redes-menu">
+                            <a href="https://www.instagram.com/starwars/">
+                              <span class="icon_redes1"><i class="bi bi-instagram"></i></span>
+                          </a>
+                          <a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR">
+                              <span class="icon_redes2"><i class="bi bi-facebook"></i></span>
+                          </a>
+                          <a href="https://www.youtube.com/channel/UCZGYJFUizSax-yElQaFDp5Q">
+                              <span class="icon_redes3"><i class="bi bi-youtube"></i></span>
+                          </a>
+                          <a href="https://twitter.com/starwars">
+                              <span class="icon_redes4"><i class="bi bi-twitter"></i></span>
+                          </a>
+                           </div>
+                       </ul>
+                   </nav>
+               </aside>
+             </div>
+            <div class="consulta">
+                <div class="row">
+                  <h1 class="titulo">Consulta de dados</h1>
+                  <div class="col">
+                    <div class="scroll">
+                        <section class="section section-1">
+                    <table class="table" >
+                      <thead>
+                        <tr>
+                          <th>Nome</th>
+                          <th>Modulo</th>
+                          <th>Enquete</th>
+                          <th>Mensagem</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+          
+                      <tbody id="listamensagensss">
+                         
+                      </tbody>
+                    </table>
+                    </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/validação.js"></script>
+</html>
